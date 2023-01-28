@@ -1,3 +1,4 @@
+
 //displaying current date - copied from Asiri Manjitha in DD/MM/YYYY format
 //https://stackoverflow.com/questions/25445377/how-to-get-current-date-without-time#:~:text=setHours(0%2C0%2C0,%2C0)%20should%20be%20enough.
 
@@ -192,5 +193,4 @@ if (hours > 16){
     $("tbody").children().eq(7).children().eq(1).addClass ("future");
     $("tbody").children().eq(7).children().eq(1).removeClass ("past");
 }
- 
 
