@@ -76,7 +76,7 @@ $("#input12pm").val(localStorage.getItem("keytwelve"));
 
 
 
-// if statement for changing color
+//setting up now time for conditional statemen1
 
 const date = new Date();
 let hours = date.getHours();
@@ -85,64 +85,112 @@ let hours = date.getHours();
 
 
 if (hours > 9){
-    $("tbody").children().children().eq(1).removeClass ("future");
-    $("tbody").children().children().eq(1).addClass ("past");
+    $("tbody").children().eq(0).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(0).children().eq(1).addClass ("past");
     
 }else if (hours === 9 ){
-    $("tbody").children().children().eq(1).removeClass ("future");
-    $("tbody").children().children().eq(1).removeClass ("past");
-    $("tbody").children().children().eq(1).addClass ("present");
+    $("tbody").children().eq(0).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(0).children().eq(1).removeClass ("past");
+    $("tbody").children().eq(0).children().eq(1).addClass ("present");
 }else {
-    $("tbody").children().children().eq(1).addClass ("future");
-    $("tbody").children().children().eq(1).removeClass ("past");
+    $("tbody").children().eq(0).children().eq(1).addClass ("future");
+    $("tbody").children().eq(0).children().eq(1).removeClass ("past");
+}
+//second row
+if (hours > 10){
+    $("tbody").children().eq(1).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(1).children().eq(1).addClass ("past");
+    
+}else if (hours === 10 ){
+    $("tbody").children().eq(1).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(1).children().eq(1).removeClass ("past");
+    $("tbody").children().eq(1).children().eq(1).addClass ("present");
+}else {
+    $("tbody").children().eq(1).children().eq(1).addClass ("future");
+    $("tbody").children().eq(1).children().eq(1).removeClass ("past");
 }
 
+//third row
+if (hours > 11){
+    $("tbody").children().eq(2).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(2).children().eq(1).addClass ("past");
+    
+}else if (hours === 11 ){
+    $("tbody").children().eq(2).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(2).children().eq(1).removeClass ("past");
+    $("tbody").children().eq(2).children().eq(1).addClass ("present");
+}else {
+    $("tbody").children().eq(2).children().eq(1).addClass ("future");
+    $("tbody").children().eq(2).children().eq(1).removeClass ("past");
+}
 
-let  changeColor = function (number){
-    i=9;
-        if (hours > i ){
-            $("tbody").children().eq(1).children().eq(1).removeClass ("future");
-            $("tbody").children().eq(1).children().eq(1).addClass ("past");
-            
-        }else if (hours === i ){
-            $("tbody").children().eq(1).children().eq(1).removeClass ("future");
-            $("tbody").children().eq(1).children().eq(1).removeClass ("past");
-            $("tbody").children().eq(1).children().eq(1).addClass ("present");
-        }else {
-            $("tbody").children().eq(1).children().eq(1).addClass ("future");
-            $("tbody").children().eq(1).children().eq(1).removeClass ("past");
-        }  
-        i++;
-        changeColour()        
-    }            
-changeColor();
+//4th row
+if (hours > 12){
+    $("tbody").children().eq(3).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(3).children().eq(1).addClass ("past");
+    
+}else if (hours === 12 ){
+    $("tbody").children().eq(3).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(3).children().eq(1).removeClass ("past");
+    $("tbody").children().eq(3).children().eq(1).addClass ("present");
+}else {
+    $("tbody").children().eq(3).children().eq(1).addClass ("future");
+    $("tbody").children().eq(3).children().eq(1).removeClass ("past");
+}
 
+//for 5th row
+if (hours > 13){
+    $("tbody").children().eq(4).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(4).children().eq(1).addClass ("past");
+    
+}else if (hours === 13 ){
+    $("tbody").children().eq(4).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(4).children().eq(1).removeClass ("past");
+    $("tbody").children().eq(4).children().eq(1).addClass ("present");
+}else {
+    $("tbody").children().eq(4).children().eq(1).addClass ("future");
+    $("tbody").children().eq(4).children().eq(1).removeClass ("past");
+}
+//6th row
+if (hours > 14){
+    $("tbody").children().eq(5).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(5).children().eq(1).addClass ("past");
+    
+}else if (hours === 14 ){
+    $("tbody").children().eq(5).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(5).children().eq(1).removeClass ("past");
+    $("tbody").children().eq(5).children().eq(1).addClass ("present");
+}else {
+    $("tbody").children().eq(5).children().eq(1).addClass ("future");
+    $("tbody").children().eq(5).children().eq(1).removeClass ("past");
+}
 
+// 7th row
+if (hours > 15){
+    $("tbody").children().eq(6).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(6).children().eq(1).addClass ("past");
+    
+}else if (hours === 15 ){
+    $("tbody").children().eq(6).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(6).children().eq(1).removeClass ("past");
+    $("tbody").children().eq(6).children().eq(1).addClass ("present");
+}else {
+    $("tbody").children().eq(6).children().eq(1).addClass ("future");
+    $("tbody").children().eq(6).children().eq(1).removeClass ("past");
+}
 
+//8th row
+if (hours > 16){
+    $("tbody").children().eq(7).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(7).children().eq(1).addClass ("past");
+    
+}else if (hours === 16 ){
+    $("tbody").children().eq(7).children().eq(1).removeClass ("future");
+    $("tbody").children().eq(7).children().eq(1).removeClass ("past");
+    $("tbody").children().eq(7).children().eq(1).addClass ("present");
+}else {
+    $("tbody").children().eq(7).children().eq(1).addClass ("future");
+    $("tbody").children().eq(7).children().eq(1).removeClass ("past");
+}
+ 
 
-
-//var relevItems = $(".relevance");
-
-
-// function changeColor(timeblock){
-//          $(".relevance").each (function (){
-            
-            
-//             if  (hours > $(".time-block").val()) {
-                
-//                 $(".relevance").removeClass ("future");
-//                 $(".relevance").addClass ("past");
-//                 console.log("hours less then now ")
-               
-//             } else if ( hours < $(".time-block").val()) {
-//                 $(".relevance").removeClass ("past");
-//                 $(".relevance").addClass ("future");
-//                 console.log("hours more than now 20")
-//             }else {
-//                 $(".relevance").removeClass ("past");
-//                 $(".relevance").addClass ("present");
-                
-//             }
-//         })
-// }
-// changeColor();
