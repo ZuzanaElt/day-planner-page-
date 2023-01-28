@@ -20,6 +20,9 @@ The application includes the following:
 
 All requirements were completed.
 
+## Note
+
+Moment.js was not used as it is being fased out and therefore a different way how to get dates had to be found. I decided to use the Javascript own date formats
 
 ## How to use
 Use of this application is intuitive.
@@ -27,6 +30,7 @@ Date and time are displayed when you open the application for the first time.
 After you choose your timeslot, after clicking in the area you can input the task.
 This can then be saved and will stay saved even after page is refreshed. 
 The time slots change color depending on time of day. If the task is still ahead the slot will be green, if it is in the past it will be grey. If it is at present it will be red
+
 
 ## Credits
 
