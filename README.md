@@ -48,3 +48,6 @@ https://zuzanaelt.github.io/day-planner-page-/
 and 
 Github page:
 https://github.com/ZuzanaElt/day-planner-page-
+
+screenshot:
+[image of the page](assets/images/Screenshot%20(39).png)
